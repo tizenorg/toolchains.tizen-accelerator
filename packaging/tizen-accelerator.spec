@@ -23,7 +23,6 @@ Requires(post):	/bin/chmod
 Needed for cross-build speedup
 This is a fake provides for ia32el, it inserts a file to /etc/ld.so.conf.d/
 
-
 %prep
 
 %build
@@ -32,8 +31,10 @@ This is a fake provides for ia32el, it inserts a file to /etc/ld.so.conf.d/
 mkdir -p %buildroot/emul/ia32-linux
 mkdir -p %buildroot/emul/ia32-linux/etc
 mkdir -p %buildroot/emul/ia32-linux/lib
+mkdir -p %buildroot/emul/ia32-linux/lib64
 mkdir -p %buildroot/emul/ia32-linux/usr
 mkdir -p %buildroot/emul/ia32-linux/usr/lib
+mkdir -p %buildroot/emul/ia32-linux/usr/lib64
 mkdir -p %buildroot/etc/ld.so.conf.d/
 cp %{S:1} %buildroot/etc/ld.so.conf.d/
 mkdir -p %buildroot/usr/share/%name/
@@ -47,10 +48,13 @@ chmod 755 /emul
 chmod 755 /emul/ia32-linux
 chmod 755 /emul/ia32-linux/etc
 chmod 755 /emul/ia32-linux/lib
+chmod 755 /emul/ia32-linux/lib64
 chmod 755 /emul/ia32-linux/usr
 chmod 755 /emul/ia32-linux/usr/lib
-cd /lib && ln -sf ../emul/ia32-linux/lib/ld-linux.so.2 ld-linux.so.2
-#/emul/ia32-linux/sbin/ldconfig
+chmod 755 /emul/ia32-linux/usr/lib64
+mkdir -p /lib && ln -sf ../emul/ia32-linux/lib/ld-linux.so.2 /lib/ld-linux.so.2
+mkdir -p /lib64 && ln -sf ../emul/ia32-linux/lib64/ld-linux-x86-64.so.2 /lib64/ld-linux-x86-64.so.2
+/emul/ia32-linux/sbin/ldconfig
 
 %files
 %defattr(-,root,root)
