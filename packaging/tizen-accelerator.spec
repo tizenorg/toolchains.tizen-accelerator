@@ -11,6 +11,7 @@ Provides:       fake-ia32el
 Provides:       tizen-accelerator
 Version:        1.0.1
 Release:        1
+VCS:            toolchains/tizen-accelerator#Z910F_PROTEX_0625-2-g7802012545f8d77ce4a0e172642f8304a6e9e64f
 License:        GPL v2 or later
 Group:          Development/Tools/Building
 Summary:        This is a fake provides for ia32el, it inserts a file to /etc/ld.so.conf.d/

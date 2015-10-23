@@ -1,0 +1,37 @@
+* Sat Jun 28 2014 SLP SCM <slpsystem.m@samsung.com> - None 
+- PROJECT: toolchains/tizen-accelerator
+- COMMIT_ID: 7802012545f8d77ce4a0e172642f8304a6e9e64f
+- BRANCH: master
+- PATCHSET_REVISION: 7802012545f8d77ce4a0e172642f8304a6e9e64f
+- CHANGE_OWNER: \"UkJung Kim\" <ujkim@samsung.com>
+- PATCHSET_UPLOADER: \"UkJung Kim\" <ujkim@samsung.com>
+- CHANGE_URL: http://slp-info.sec.samsung.net/gerrit/534146
+- PATCHSET_REVISION: 7802012545f8d77ce4a0e172642f8304a6e9e64f
+- TAGGER: SLP SCM <slpsystem.m@samsung.com>
+- Gerrit patchset approval info:
+- UkJung Kim <ujkim@samsung.com> Verified : 1
+- Newton Lee <newton.lee@samsung.com> Code-Review : 2
+- Newton Lee <newton.lee@samsung.com> Verified : 1
+- CHANGE_SUBJECT: Merged x86_64 support to master
+
+- Merged x86_64 support to master
+
+* Tue Jul 30 2013 UkJung Kim <ujkim@samsung.com> - None 
+- PROJECT: toolchains/tizen-accelerator
+- COMMIT_ID: f15b9a8bcfeba65b5491c24995ad2b56e3a7c927
+- PATCHSET_REVISION: f15b9a8bcfeba65b5491c24995ad2b56e3a7c927
+- CHANGE_OWNER: \"UkJung Kim\" <ujkim@samsung.com>
+- PATCHSET_UPLOADER: \"UkJung Kim\" <ujkim@samsung.com>
+- CHANGE_URL: http://slp-info.sec.samsung.net/gerrit/249464
+- PATCHSET_REVISION: f15b9a8bcfeba65b5491c24995ad2b56e3a7c927
+- TAGGER: UkJung Kim <ujkim@samsung.com>
+- Gerrit patchset approval info:
+- Inkyo Jung <inkyo.jung@samsung.com> Code Review : 2
+- Inkyo Jung <inkyo.jung@samsung.com> Verified : 1
+- CHANGE_SUBJECT: Submit to OBS
+
+- Submit to OBS
+
+* Mon Feb 14 2011 Yi Yang <yi.y.yang@intel.com> - 1.0.1
+- Requires coreutils (Fix BMC#13494)
+
